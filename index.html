@@ -116,7 +116,7 @@
                   uppercase
                   font-bold
                 "
-                href="#pablo"
+                href="#"
                 ><i class="text-red-500 fab fa-facebook text-lg leading-lg"></i
                 ><span class="lg:hidden inline-block ml-2">Share</span></a
               >
@@ -136,7 +136,7 @@
                   uppercase
                   font-bold
                 "
-                href="#pablo"
+                href="#"
                 ><i class="text-red-500 fab fa-twitter text-lg leading-lg"></i
                 ><span class="lg:hidden inline-block ml-2">Tweet</span></a
               >
@@ -156,7 +156,7 @@
                   uppercase
                   font-bold
                 "
-                href="#pablo"
+                href="#"
                 ><i class="text-red-500 fab fa-instagram text-lg leading-lg"></i
                 ><span class="lg:hidden inline-block ml-2">Profile</span></a
               >
@@ -181,10 +181,8 @@
         style="min-height: 95vh"
       >
         <div
-          class="absolute top-0 w-full h-full bg-top bg-cover"
-          style="
-            background-image: url('https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80');
-          "
+          class="absolute top-0 w-full h-full bg-top bg-contain"
+          style="background-image: url('./Assets/Heroimg.jpeg')"
         >
           <span
             id="blackOverlay"
@@ -367,13 +365,7 @@
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap justify-center text-center mb-24">
             <div class="w-full lg:w-6/12 px-4">
-              <h2 class="text-4xl font-semibold uppercase">
-                Meet Our Trainers
-              </h2>
-              <p class="text-lg leading-relaxed m-4">
-                Our trainers are are here to dedicate the time and effort that
-                you need to get in the best shape of your life
-              </p>
+              <h2 class="text-4xl font-semibold uppercase">Our Work</h2>
             </div>
           </div>
           <!-- Trainer Card Wrapper -->
@@ -482,8 +474,7 @@
                 Contact Us
               </h2>
               <p class="text-lg leading-relaxed mt-4 mb-4">
-                Contact us to ask any questions, aquire a membership, talk to
-                our trainers or anything else
+                Contact us to ask any questions, book a event or anything else
               </p>
             </div>
           </div>
@@ -491,7 +482,12 @@
       </section>
 
       <!-- Contact Form -->
-      <section class="relative block py-24 lg:pt-0 bg-black">
+      <form
+        target="_blank"
+        action="https://formsubmit.co/happifyevents@gmail.com"
+        method="POST"
+        class="relative block py-24 lg:pt-0 bg-black"
+      >
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
             <div class="w-full lg:w-6/12 px-4">
@@ -527,12 +523,15 @@
                         placeholder-gray-400
                         bg-white
                         rounded
-                        text-sm
+                        text-sm text-black
                         shadow
                         focus:outline-none focus:shadow-outline
                         w-full
+                        form-control
                       "
+                      name="name"
                       placeholder="Full Name"
+                      required
                       style="transition: all 0.15s ease 0s"
                     />
                   </div>
@@ -549,12 +548,15 @@
                         placeholder-gray-400
                         bg-white
                         rounded
-                        text-sm
+                        text-sm text-black
                         shadow
                         focus:outline-none focus:shadow-outline
                         w-full
+                        form-control
                       "
+                      name="email"
                       placeholder="Email"
+                      required
                       style="transition: all 0.15s ease 0s"
                     />
                   </div>
@@ -572,12 +574,14 @@
                         placeholder-gray-400
                         bg-white
                         rounded
-                        text-sm
+                        text-sm text-black
                         shadow
                         focus:outline-none focus:shadow-outline
                         w-full
                       "
+                      name="message"
                       placeholder="Type a message..."
+                      required
                     ></textarea>
                   </div>
                   <div class="text-center mt-6">
@@ -599,7 +603,7 @@
                         mr-1
                         mb-1
                       "
-                      type="button"
+                      type="submit"
                       style="transition: all 0.15s ease 0s"
                     >
                       Send Message
@@ -610,7 +614,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </form>
     </main>
 
     <!-- Footer -->
@@ -667,11 +671,14 @@
                   outline-none
                   focus:outline-none
                   mr-2
-                  p-3
+                  p-2
                 "
                 type="button"
               >
-                <i class="flex fab fa-twitter text-red-500"></i></button
+                <a
+                  class="flex fab fa-twitter text-red-500"
+                  href="#"
+                ></a></button
               ><button
                 class="
                   bg-white
@@ -687,11 +694,14 @@
                   outline-none
                   focus:outline-none
                   mr-2
-                  p-3
+                  p-2
                 "
                 type="button"
               >
-                <i class="flex fab fa-facebook-square text-red-500"></i></button
+                <a
+                  class="flex fab fa-facebook-square text-red-500"
+                  href="#"
+                ></a></button
               ><button
                 class="
                   bg-white
@@ -707,11 +717,11 @@
                   outline-none
                   focus:outline-none
                   mr-2
-                  p-3
+                  p-2
                 "
                 type="button"
               >
-                <i class="flex fab fa-instagram text-red-500"></i>
+                <a class="flex fab fa-instagram text-red-500" href="#"></a>
               </button>
             </div>
           </div>
@@ -722,7 +732,7 @@
         >
           <div class="w-full md:w-4/12 px-4 mx-auto text-center">
             <div class="text-sm text-gray-600 font-semibold py-1">
-              Copyright © The Power Room
+              Copyright © Happify
             </div>
           </div>
         </div>
