@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Happify</title>
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
@@ -67,7 +68,7 @@
               text-white
             "
             href="#"
-            ><img class="h-24" src="./Assets/logo.png" alt="logo" /></a
+            ><img class="h-16 md:h-24" src="./Assets/logo.png" alt="logo" /></a
           ><button
             class="
               cursor-pointer
@@ -117,7 +118,9 @@
                   font-bold
                 "
                 href="#"
-                ><i class="text-red-500 fab fa-facebook text-lg leading-lg"></i
+                ><i
+                  class="text-red-500 fab fa-facebook-f text-lg leading-lg"
+                ></i
                 ><span class="lg:hidden inline-block ml-2">Share</span></a
               >
             </li>
@@ -137,8 +140,8 @@
                   font-bold
                 "
                 href="#"
-                ><i class="text-red-500 fab fa-twitter text-lg leading-lg"></i
-                ><span class="lg:hidden inline-block ml-2">Tweet</span></a
+                ><i class="text-red-500 fab fa-whatsapp text-lg leading-lg"></i
+                ><span class="lg:hidden inline-block ml-2">whatsapp</span></a
               >
             </li>
             <!-- Icon 3 -->
@@ -171,7 +174,8 @@
       <div
         class="
           relative
-          pt-16
+          pt-20
+          md:pt-16
           pb-32
           flex
           content-center
@@ -699,7 +703,7 @@
                 type="button"
               >
                 <a
-                  class="flex fab fa-facebook-square text-red-500"
+                  class="flex fab fa-facebook-f text-red-500"
                   href="#"
                 ></a></button
               ><button
@@ -721,7 +725,10 @@
                 "
                 type="button"
               >
-                <a class="flex fab fa-instagram text-red-500" href="https://www.instagram.com/happify.in/"></a>
+                <a
+                  class="flex fab fa-instagram text-red-500"
+                  href="https://www.instagram.com/happify.in/"
+                ></a>
               </button>
             </div>
           </div>
