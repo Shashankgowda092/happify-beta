@@ -747,6 +747,18 @@
     </footer>
     <!-- partial -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="./script.js"></script>
+    <script>
+      function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle('hidden')
+      document.getElementById(collapseID).classList.toggle('block')
+    }
+
+
+ AOS.init({
+      delay: 200,
+      duration: 1200,
+      once: false,
+    })
+    </script>
   </body>
 </html>
